@@ -1,6 +1,7 @@
 import { Col, Row } from "react-bootstrap";
+import { useSelector } from "react-redux";
 
-const ContactItem = () => {
+const ContactItem = ({ item }) => {
 
   // 출력
   return (
@@ -10,8 +11,8 @@ const ContactItem = () => {
           <img width={50} src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Unknown_person.jpg/1200px-Unknown_person.jpg" />
         </Col>
         <Col lg={11}>
-          <div>ina</div>
-          <div>01000001111</div>
+          <div>{item.name}</div>
+          <div>{item.phoneNumber}</div>
         </Col>
       </Row>
     </>
