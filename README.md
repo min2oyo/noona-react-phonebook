@@ -4,6 +4,12 @@
 - bootstrap
   - https://react-bootstrap.github.io/getting-started/introduction
   - npm i react-bootstrap bootstrap
+- redux
+  - https://redux.js.org/introduction/getting-started
+  - npm i redux
+- react redux
+  - https://react-redux.js.org/introduction/getting-started
+  - npm i react-redux
 
 ## Task
 - 구성
