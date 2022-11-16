@@ -1,26 +1,28 @@
-import React from 'react';
-import logo from './logo.svg';
+import { Col, Container, Row } from 'react-bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
+import ContactForm from './component/ContactForm';
+import ContactList from './component/ContactList';
 
 function App() {
+
+  // 출력
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <h1 className='title'>연락처</h1>
+      <Container>
+        <Row>
+          <Col>
+            <ContactForm />
+          </Col>
+          <Col>
+            <ContactList />
+          </Col>
+        </Row>
+      </Container>
+    </>
   );
+
 }
 
 export default App;
